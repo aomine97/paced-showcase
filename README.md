@@ -12,17 +12,7 @@ Budgeting apps fail because they require you to go look at them. Paced inverts t
 
 ## How it works
 
-```
-Bank ──Plaid──► Webhook ──► Edge function: sync transactions
-                                    │
-                                    ▼
-                            Postgres (RLS per user)
-                                    │
-                     Edge function: categorize + build digest
-                                    │
-                                    ▼
-                            Twilio ──► SMS to user
-```
+![Paced architecture](images/architecture.svg)
 
 React Native app for onboarding, account linking, and reviewing history. Everything else runs server-side on a schedule.
 
