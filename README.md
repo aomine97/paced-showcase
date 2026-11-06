@@ -2,6 +2,8 @@
 
 A personal finance app that texts you where your money went, so you never have to open a dashboard.
 
+![Paced](images/paced-card.svg)
+
 **Status:** Private beta. Source is private; this repo documents the architecture and what I built.
 
 ## The problem
