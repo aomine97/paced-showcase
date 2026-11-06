@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10z" fill="#64748b"/>
+  </marker>
+</defs>
+<rect width="1200" height="560" rx="18" fill="#0b1220"/>
+<rect x="40" y="34" width="10" height="10" rx="2" fill="#2fbf87"/>
+<text x="60" y="44" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#e2e8f0" letter-spacing="0.5">PACED  ·  ARCHITECTURE</text>
+<rect x="40" y="90" width="230" height="110" rx="12" fill="#162033" stroke="#2c3a55" stroke-width="1.5"/>
+<rect x="40" y="90" width="4" height="110" rx="2" fill="#2fbf87"/>
+<text x="58" y="120" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Bank</text>
+<text x="58" y="144" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">linked once through</text>
+<text x="58" y="164" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">Plaid Link</text>
+<rect x="330" y="90" width="250" height="110" rx="12" fill="#162033" stroke="#2c3a55" stroke-width="1.5"/>
+<rect x="330" y="90" width="4" height="110" rx="2" fill="#2fbf87"/>
+<text x="348" y="120" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Plaid</text>
+<text x="348" y="144" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">Transactions API</text>
+<text x="348" y="164" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">webhooks on new activity</text>
+<rect x="640" y="90" width="520" height="110" rx="12" fill="#162033" stroke="#2c3a55" stroke-width="1.5"/>
+<rect x="640" y="90" width="4" height="110" rx="2" fill="#2fbf87"/>
+<text x="658" y="120" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Edge function: sync</text>
+<text x="658" y="144" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">idempotent, reconciles against Plaid&#x27;s cursor</text>
+<text x="658" y="164" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">so missed or duplicate webhooks are safe</text>
+<rect x="640" y="250" width="520" height="110" rx="12" fill="#162033" stroke="#2c3a55" stroke-width="1.5"/>
+<rect x="640" y="250" width="4" height="110" rx="2" fill="#2fbf87"/>
+<text x="658" y="280" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Supabase Postgres</text>
+<text x="658" y="304" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">accounts, transactions, categories, budgets</text>
+<text x="658" y="324" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">row-level security: users only read their own rows</text>
+<rect x="640" y="410" width="520" height="110" rx="12" fill="#162033" stroke="#2c3a55" stroke-width="1.5"/>
+<rect x="640" y="410" width="4" height="110" rx="2" fill="#2fbf87"/>
+<text x="658" y="440" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Scheduled: categorize + digest</text>
+<text x="658" y="464" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">normalize categories, apply user overrides</text>
+<text x="658" y="484" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">summarize the period to fit one SMS</text>
+<rect x="330" y="410" width="250" height="110" rx="12" fill="#162033" stroke="#2c3a55" stroke-width="1.5"/>
+<rect x="330" y="410" width="4" height="110" rx="2" fill="#2fbf87"/>
+<text x="348" y="440" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Twilio</text>
+<text x="348" y="464" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">SMS digest</text>
+<text x="348" y="484" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">to the user</text>
+<rect x="40" y="250" width="230" height="110" rx="12" fill="#162033" stroke="#2c3a55" stroke-width="1.5"/>
+<rect x="40" y="250" width="4" height="110" rx="2" fill="#2fbf87"/>
+<text x="58" y="280" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">React Native app</text>
+<text x="58" y="304" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">onboarding, bank linking</text>
+<text x="58" y="324" font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">history, overrides</text>
+<line x1="270" y1="145" x2="328" y2="145" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="580" y1="145" x2="638" y2="145" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<text x="609" y="135" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#cbd5e1">webhook</text>
+<line x1="900" y1="200" x2="900" y2="248" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="900" y1="360" x2="900" y2="408" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="638" y1="465" x2="582" y2="465" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="270" y1="305" x2="638" y2="305" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<text x="455" y="295" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#cbd5e1">Supabase Auth</text>
+</svg>
